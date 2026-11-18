@@ -1,0 +1,57 @@
+name: 💡 Suggest a New Action or Feature
+description: Propose a new VBA CI/CD GitHub Action or upvote/expand a roadmap item.
+title: "[Idea]: "
+labels: ["enhancement", "roadmap-idea"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping grow **VBA-Actions**! Fill out the details below so we can see how this fits into a VBA CI/CD workflow.
+
+  - type: dropdown
+    id: stage
+    attributes:
+      label: CI/CD Workflow Stage
+      description: Which part of the VBA development lifecycle does this belong to?
+      options:
+        - Dependency & Reference Management
+        - Linting & Static Analysis
+        - Unit Testing & Code Coverage
+        - Documentation Generation
+        - Packaging, Signing & Release
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the manual step or pain point VBA developers face on GitHub today.
+      placeholder: e.g., Every time we build an .xlam on a clean Windows runner, COM references break unless we manually bind GUIDs...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-workflow
+    attributes:
+      label: Proposed Action Name & Workflow Usage
+      description: How would you expect this action to look inside a `.github/workflows/*.yml` file?
+      value: |
+        ```yaml
+        - name: Run proposed VBA action
+          uses: Vba-actions/proposed-action-name@v1
+          with:
+            source-dir: './src'
+        ```
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution Interest
+      options:
+        - label: I'd be interested in helping build or test this action
+        - label: I already have a script or prototype I could share
