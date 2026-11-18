@@ -40,7 +40,7 @@ on:
 
 jobs:
   lint-and-test:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
