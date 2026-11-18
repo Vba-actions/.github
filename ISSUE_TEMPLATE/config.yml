@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🐛 Bug Report — lint-vba
+    url: https://github.com
+    about: Report a formatting, whitespace, or capitalization check issue in lint-vba.
+
+  - name: 🐛 Bug Report — test-vba
+    url: https://github.com
+    about: Report a test runner or Coveralls.io code coverage issue in test-vba.
+
+  - name: 🐛 Bug Report — NaturalDocs-build-pages
+    url: https://github.com
+    about: Report a documentation generation or GitHub Pages deployment issue.
+
+  - name: 🐛 Bug Report — build-excel-addin
+    url: https://github.com
+    about: Report an .xlam bundling or build issue in build-excel-addin.
